@@ -20,7 +20,10 @@ public class PlayerController : MonoBehaviour
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = 0;
         input.z = Input.GetAxisRaw("Vertical");
+    }
 
+    void FixedUpdate()
+    {
         movePlayer(input);
     }
 
